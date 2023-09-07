@@ -6,11 +6,9 @@ using UnityEngine.UIElements;
 public class Player : MonoBehaviour
 {
     private Rigidbody2D m_rb2D;
+    [SerializeField] private bool m_grounded = false;
 
-    private bool m_grounded = false;
-
-    [SerializeField] private float floatHeight;
-    [SerializeField] private float m_jumpForce = 1.0f;
+    [SerializeField] private float m_jumpForce = 5.0f;
 
     private void Awake()
     {
@@ -24,24 +22,27 @@ public class Player : MonoBehaviour
 
     private void PlayerMovement()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
         float horizontalInput = Input.GetAxisRaw("Horizontal");
-        float verticalInput = Input.GetAxisRaw("Vertical");
-
-        if (hit.collider != null)
-        {
-            float distance = Mathf.Abs(hit.point.y - transform.position.y);
-            float heightError = floatHeight - distance;
-            float force = m_jumpForce * heightError + m_rb2D.velocity.y;
-        }
-
         m_rb2D.velocity = new Vector2(horizontalInput, m_rb2D.velocity.y);
 
         if (Input.GetKeyDown(KeyCode.Space) && m_grounded == true) 
-        { 
-            m_rb2D.velocity = new Vector2(m_rb2D.velocity.x, verticalInput); 
+        {           
+            m_rb2D.velocity = new Vector2(m_rb2D.velocity.x, m_jumpForce);
+        }
 
+
+        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.down, 0.1f, 1 << 6);
+        Debug.DrawRay(transform.position, Vector2.down, Color.green);
+        if (hitInfo.collider != null)
+        {
+            Debug.Log("Hit!: " + hitInfo.collider.name);
+            m_grounded = true;
+        }
+        else if (hitInfo.collider == null)
+        {
+            m_grounded = false;
         }
         
+
     }
 }
