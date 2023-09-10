@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
+    public int Health { get; set; }
+
     private Rigidbody2D m_rb2D;
     private PlayerAnimation m_playerAnim;
+    private Animator m_anim;
     private SpriteRenderer m_playerSprite, m_swordArcRenderer;
-    private bool m_resetJump = false, m_isGrounded = false, m_playerAttacked = false;
+    private bool m_resetJump = false, m_isGrounded = false;
     
     [SerializeField] private LayerMask m_groundLayer;
     [SerializeField] private float m_jumpForce = 5.0f;
@@ -21,6 +24,7 @@ public class Player : MonoBehaviour
         m_playerAnim = GetComponent<PlayerAnimation>();
         m_playerSprite = GetComponentInChildren<SpriteRenderer>();
         m_swordArcRenderer = transform.GetChild(1).GetComponent<SpriteRenderer>();
+        m_anim = transform.GetChild(1).GetComponent<Animator>();
     }
 
     private void Update()
@@ -107,25 +111,16 @@ public class Player : MonoBehaviour
     void PlayerAttack()
     {
         if (Input.GetMouseButtonDown(0) && IsGrounded() == true) 
-        {             
-            StartCoroutine(AttackCooldownRoutine());
+        {
+            m_playerAnim.Attack();
         }        
     }
 
-    // Funktion som skapar en Attack cooldown för spelaren 
-    IEnumerator AttackCooldownRoutine()
+    public void Damage()
     {
-        switch(m_playerAttacked)
+        if (Health <= 0)
         {
-            case false:
-                m_playerAnim.Attack();
-                m_playerAttacked = true;
-                break;
-
-            case true:
-                yield return new WaitForSeconds(0.5f);
-                m_playerAttacked = false;
-                break;
-        }               
+            m_anim.SetTrigger("Death");
+        }
     }
 }
