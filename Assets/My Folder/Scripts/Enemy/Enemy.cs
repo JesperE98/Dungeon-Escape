@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
+
     [SerializeField]
     protected int health;
     [SerializeField]
@@ -12,10 +13,13 @@ public abstract class Enemy : MonoBehaviour
     protected int gems;
     [SerializeField]
     protected Transform m_pointA, m_pointB;
+    [SerializeField]
+    protected GameObject gemPrefab;
 
     protected Animator anim;
     protected SpriteRenderer sprite;
     protected Vector3 currentTarget;
+    protected Diamond diamond;
 
     protected bool isHit = false;
     protected Player player;
@@ -26,6 +30,7 @@ public abstract class Enemy : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        diamond = GetComponent<Diamond>();
     }
 
     private void Start()

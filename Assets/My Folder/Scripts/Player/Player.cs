@@ -7,6 +7,8 @@ public class Player : MonoBehaviour, IDamageable
 {
     public int Health { get; set; }
 
+    public int Diamond = 0;
+
     private Rigidbody2D m_rb2D;
     private PlayerAnimation m_playerAnim;
     private Animator m_anim;

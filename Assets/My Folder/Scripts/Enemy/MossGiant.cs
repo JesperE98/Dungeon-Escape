@@ -6,6 +6,7 @@ public class MossGiant : Enemy, IDamageable
 {
     public int Health { get; set; }
 
+
     public override void Init()
     {
         base.Init();
@@ -14,7 +15,8 @@ public class MossGiant : Enemy, IDamageable
 
     public void Damage()
     {
-        print("Damage()");
+        if (isDead == true) { return; }
+
         health -= 25;
         anim.SetTrigger("Hit");
         isHit = true;
@@ -24,6 +26,8 @@ public class MossGiant : Enemy, IDamageable
         {
             anim.SetTrigger("Death");
             isDead = true;
+            GameObject diamond = Instantiate(gemPrefab, transform.position, Quaternion.identity) as GameObject;
+            diamond.GetComponent<Diamond>().gems = base.gems;
         }
 
         Debug.Log(health);
