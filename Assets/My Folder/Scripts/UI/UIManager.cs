@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,10 +20,19 @@ public class UIManager : MonoBehaviour
             return _instance;
         }
     }
+    private void Awake()
+    {
+        _instance = this;
+    }
+
     [SerializeField]
     private TMP_Text playerGemCountText;
     [SerializeField]
     private Image selectionImage;
+    [SerializeField]
+    private Text gemCountText;
+    [SerializeField]
+    private Image[] healthBars;
 
     public void OpenShop(int gemCount)
     {
@@ -33,8 +44,17 @@ public class UIManager : MonoBehaviour
         selectionImage.rectTransform.anchoredPosition = new Vector2(selectionImage.rectTransform.anchoredPosition.x, yPos);
     }
 
-    private void Awake()
+    public void UpdateGemCount(int count)
     {
-        _instance = this;
+        gemCountText.text = "" + count;
+    }
+
+    public void UpdateLives(int livesRemaining)
+    {
+        for (int i = 0; i <= livesRemaining; i++)
+        {
+            if (i == livesRemaining) { healthBars[i].enabled = false; }
+        }
+
     }
 }

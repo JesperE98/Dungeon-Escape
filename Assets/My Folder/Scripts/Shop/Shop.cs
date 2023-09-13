@@ -21,7 +21,7 @@ public class Shop : MonoBehaviour
 
             if (player != null)
             {
-                UIManager.Instance.OpenShop(player.Diamond);
+                UIManager.Instance.OpenShop(player.diamonds);
             }
 
             m_shopPanel.SetActive(true);
@@ -64,10 +64,14 @@ public class Shop : MonoBehaviour
 
     public void BuyItem()
     {
-
-        if (player.Diamond >= currentItemCost)
+        if (currentSelectedItem == 2)
         {
-            player.Diamond -= currentItemCost;
+            GameManager.Instance.HasKeyToCastle = true;
+        }
+
+        if (player.diamonds >= currentItemCost)
+        {
+            player.diamonds -= currentItemCost;
         }
         else
         {

@@ -65,7 +65,7 @@ public abstract class Enemy : MonoBehaviour
 
         float distance = Vector3.Distance(transform.localPosition, player.transform.position);
 
-        if (distance > 2.0f)
+        if (distance > 2.0f || player.Health < 1)
         {
             isHit = false;
             anim.SetBool("InCombat", false);
