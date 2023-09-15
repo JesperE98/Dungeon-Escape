@@ -75,6 +75,24 @@ MonoBehaviour:
   - Name: Desktop
     Value: 75008
   Exists: 1
+--- !u!114 &-7886336762653661587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SoundFX/SoundFX Menu.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Dungeon_Escape_Audio/Desktop/SoundFX/SoundFX Menu.bank
+  Name: SoundFX/SoundFX Menu
+  StudioPath: bank:/SoundFX/SoundFX Menu
+  lastModified: 638303745361383750
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-7607495044416258221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +255,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2918
+--- !u!114 &-6928138277747914610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Enemies/SoundFX Moss Giant/Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Enemies/SoundFX Moss Giant/Attack
+  Guid:
+    Data1: 921111853
+    Data2: 1224321248
+    Data3: 517182382
+    Data4: -580738670
+  Banks:
+  - {fileID: -4629714974833794794}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 800
 --- !u!114 &-6807998448710374306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +349,78 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-6630498880950925689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SoundFX/SoundFX Spider.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Dungeon_Escape_Audio/Desktop/SoundFX/SoundFX Spider.bank
+  Name: SoundFX/SoundFX Spider
+  StudioPath: bank:/SoundFX/SoundFX Spider
+  lastModified: 638303745362221969
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6596020474841242227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Enemies/SoundFX Moss Giant/Death
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Enemies/SoundFX Moss Giant/Death
+  Guid:
+    Data1: 505685543
+    Data2: 1107899487
+    Data3: -557720694
+    Data4: -390351358
+  Banks:
+  - {fileID: -4629714974833794794}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3346
+--- !u!114 &-6362103721497287428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Enemies/SoundFX Skeleton/Walk
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Enemies/SoundFX Skeleton/Walk
+  Guid:
+    Data1: -1275287908
+    Data2: 1258688548
+    Data3: 1962222257
+    Data4: 1296798610
+  Banks:
+  - {fileID: -4593702393634593477}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 458
 --- !u!114 &-5491109319321075745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,6 +502,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-5009714318258281142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Dungeon_Escape_Audio/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638303745361178987
+  FileSizes:
+  - Name: 
+    Value: 1774
+  Exists: 1
 --- !u!114 &-4903126273122013860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,6 +549,42 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-4629714974833794794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SoundFX/SoundFX Moss Giant.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Dungeon_Escape_Audio/Desktop/SoundFX/SoundFX Moss Giant.bank
+  Name: SoundFX/SoundFX Moss Giant
+  StudioPath: bank:/SoundFX/SoundFX Moss Giant
+  lastModified: 638303745361589197
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4593702393634593477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SoundFX/SoundFX Skeleton.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Dungeon_Escape_Audio/Desktop/SoundFX/SoundFX Skeleton.bank
+  Name: SoundFX/SoundFX Skeleton
+  StudioPath: bank:/SoundFX/SoundFX Skeleton
+  lastModified: 638303745362020656
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-4026436419966854333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,6 +719,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 84256
   Exists: 1
+--- !u!114 &-1934768707500533703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Enemies/SoundFX Skeleton/Death
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Enemies/SoundFX Skeleton/Death
+  Guid:
+    Data1: -1212273455
+    Data2: 1315722027
+    Data3: 2106468791
+    Data4: -1438757800
+  Banks:
+  - {fileID: -4593702393634593477}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2918
 --- !u!114 &-1561592236634673190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,6 +773,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 458
+--- !u!114 &-1369088471166669934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Player/Gem Pickup
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Player/Gem Pickup
+  Guid:
+    Data1: 937095837
+    Data2: 1166870493
+    Data3: 849311164
+    Data4: 1201895090
+  Banks:
+  - {fileID: 90667493086392157}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1386
+--- !u!114 &-845698976922031086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Enemies/SoundFX Skeleton/Hit
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Enemies/SoundFX Skeleton/Hit
+  Guid:
+    Data1: -228585206
+    Data2: 1267551785
+    Data3: 814345357
+    Data4: 2114901370
+  Banks:
+  - {fileID: -4593702393634593477}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 570
 --- !u!114 &-834081081344353371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,6 +922,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 570
+--- !u!114 &-13795497745161287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Enemies/SoundFX Moss Giant/Hit
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Enemies/SoundFX Moss Giant/Hit
+  Guid:
+    Data1: 1407664901
+    Data2: 1181740157
+    Data3: -247319934
+    Data4: -33896343
+  Banks:
+  - {fileID: -4629714974833794794}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1333
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,39 +962,66 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -3891309627083814386}
-  - {fileID: 8704750694295004667}
-  - {fileID: -2315263308383783186}
-  - {fileID: -3727530892964673300}
-  - {fileID: -6807998448710374306}
-  - {fileID: 9069030693706520868}
-  - {fileID: -2034441063390357037}
-  - {fileID: 7088427972953907444}
+  - {fileID: -5009714318258281142}
+  - {fileID: 6202695724200007667}
+  - {fileID: 1738611117235421596}
+  - {fileID: -7886336762653661587}
+  - {fileID: -4629714974833794794}
+  - {fileID: 90667493086392157}
+  - {fileID: -4593702393634593477}
+  - {fileID: -6630498880950925689}
   EditorEvents:
-  - {fileID: -8754783202253804256}
-  - {fileID: 5638150073111266060}
-  - {fileID: 2890060765383290914}
-  - {fileID: -4026436419966854333}
-  - {fileID: 7358979000073797686}
-  - {fileID: 7207454804513073970}
-  - {fileID: 3144176336949737745}
-  - {fileID: -7123022264698833419}
-  - {fileID: -7607495044416258221}
-  - {fileID: 5409676879879313561}
-  - {fileID: 5642831155948365102}
-  - {fileID: -114397220836430423}
-  - {fileID: -4903126273122013860}
-  - {fileID: -1561592236634673190}
-  - {fileID: -7062889153876447314}
-  - {fileID: 6964586440645703474}
-  - {fileID: 2673081081051181157}
+  - {fileID: 7322970537203850892}
+  - {fileID: -13795497745161287}
+  - {fileID: -6596020474841242227}
+  - {fileID: -6928138277747914610}
+  - {fileID: 232719641287330788}
+  - {fileID: 6951644541509189737}
+  - {fileID: 698131535106762290}
+  - {fileID: -1369088471166669934}
+  - {fileID: 9020194524155357137}
+  - {fileID: 1169010876460821250}
+  - {fileID: 1532643053749384900}
+  - {fileID: -845698976922031086}
+  - {fileID: 16364687665821428}
+  - {fileID: -6362103721497287428}
+  - {fileID: -1934768707500533703}
+  - {fileID: 8789220768108660677}
+  - {fileID: 8507066484280698831}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -2315263308383783186}
+  - {fileID: 1738611117235421596}
   StringsBanks:
-  - {fileID: -3891309627083814386}
-  cacheTime: 638303739260358110
+  - {fileID: -5009714318258281142}
+  cacheTime: 638303745362221969
   cacheVersion: 131607
+--- !u!114 &16364687665821428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Enemies/SoundFX Skeleton/Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Enemies/SoundFX Skeleton/Attack
+  Guid:
+    Data1: 2045183757
+    Data2: 1206846506
+    Data3: -12925781
+    Data4: 1627604060
+  Banks:
+  - {fileID: -4593702393634593477}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &27457519318441171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,6 +1069,150 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 10080
+  Exists: 1
+--- !u!114 &90667493086392157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SoundFX/SoundFX Player.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Dungeon_Escape_Audio/Desktop/SoundFX/SoundFX Player.bank
+  Name: SoundFX/SoundFX Player
+  StudioPath: bank:/SoundFX/SoundFX Player
+  lastModified: 638303745361813580
+  FileSizes: []
+  Exists: 1
+--- !u!114 &232719641287330788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Enemies/SoundFX Moss Giant/Walk
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Enemies/SoundFX Moss Giant/Walk
+  Guid:
+    Data1: -2122556509
+    Data2: 1295098626
+    Data3: -646542686
+    Data4: -759218490
+  Banks:
+  - {fileID: -4629714974833794794}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 550
+--- !u!114 &698131535106762290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Player/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Player/Jump
+  Guid:
+    Data1: -273308011
+    Data2: 1198421971
+    Data3: 1134997166
+    Data4: 2066172047
+  Banks:
+  - {fileID: 90667493086392157}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 370
+--- !u!114 &1169010876460821250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Player/Walk
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Player/Walk
+  Guid:
+    Data1: -231609871
+    Data2: 1153326881
+    Data3: -2141978478
+    Data4: 1021456443
+  Banks:
+  - {fileID: 90667493086392157}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1532643053749384900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Player/Hit
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Player/Hit
+  Guid:
+    Data1: -1486921729
+    Data2: 1286007615
+    Data3: 1408599181
+    Data4: 1548912565
+  Banks:
+  - {fileID: 90667493086392157}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &1738611117235421596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Dungeon_Escape_Audio/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638303745361168852
+  FileSizes: []
   Exists: 1
 --- !u!114 &2457622386343449327
 MonoBehaviour:
@@ -1100,6 +1552,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 904
+--- !u!114 &6202695724200007667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Background.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Dungeon_Escape_Audio/Desktop/Background.bank
+  Name: Background
+  StudioPath: bank:/Background
+  lastModified: 638303745361117874
+  FileSizes: []
+  Exists: 1
 --- !u!114 &6713072144370498898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,6 +1591,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 44864
   Exists: 1
+--- !u!114 &6951644541509189737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Player/Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Player/Attack
+  Guid:
+    Data1: -2074611109
+    Data2: 1246599712
+    Data3: -510624609
+    Data4: 260781867
+  Banks:
+  - {fileID: 90667493086392157}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 904
 --- !u!114 &6964586440645703474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1195,6 +1692,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 904
+--- !u!114 &7322970537203850892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Menu/Menu Select
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Menu/Menu Select
+  Guid:
+    Data1: 673016519
+    Data2: 1173492369
+    Data3: 1457974450
+    Data4: -1845132236
+  Banks:
+  - {fileID: -7886336762653661587}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7358979000073797686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1249,6 +1773,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2314
+--- !u!114 &8507066484280698831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Enemies/SoundFX Spider/Attack
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Enemies/SoundFX Spider/Attack
+  Guid:
+    Data1: -1798003650
+    Data2: 1098782888
+    Data3: -103984970
+    Data4: 1179534363
+  Banks:
+  - {fileID: -6630498880950925689}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1781
 --- !u!114 &8704750694295004667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1269,6 +1820,60 @@ MonoBehaviour:
   - Name: Desktop
     Value: 494
   Exists: 1
+--- !u!114 &8789220768108660677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Enemies/SoundFX Spider/Death
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Enemies/SoundFX Spider/Death
+  Guid:
+    Data1: 1274135355
+    Data2: 1181964478
+    Data3: 2014682020
+    Data4: -1540797535
+  Banks:
+  - {fileID: -6630498880950925689}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2314
+--- !u!114 &9020194524155357137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundFX Player/Death
+  m_EditorClassIdentifier: 
+  Path: event:/SoundFX Player/Death
+  Guid:
+    Data1: -628087827
+    Data2: 1321803626
+    Data3: 926238393
+    Data4: 1838464190
+  Banks:
+  - {fileID: 90667493086392157}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1002
 --- !u!114 &9069030693706520868
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@
 			<value>SoundFX Menu</value>
 		</property>
 		<relationship name="folder">
-			<destination>{c79f49ac-e1d7-4c83-8ab3-299b280fafd3}</destination>
+			<destination>{fe0c58e8-0ccf-4bc1-8aae-5501a0f339a6}</destination>
 		</relationship>
 	</object>
 </objects>

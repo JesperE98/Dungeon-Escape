@@ -294,7 +294,7 @@ MonoBehaviour:
   active: 1
   Properties:
     LiveUpdate:
-      Value: 1
+      Value: 0
       HasValue: 1
     LiveUpdatePort:
       Value: 0
@@ -306,7 +306,7 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     SampleRate:
-      Value: 48000
+      Value: 0
       HasValue: 1
     BuildDirectory:
       Value: 
@@ -400,8 +400,7 @@ MonoBehaviour:
       Value: []
       HasValue: 1
     StaticPlugins:
-      Value:
-      - 
+      Value: []
       HasValue: 1
     CallbackHandler:
       Value: {fileID: 0}
@@ -562,10 +561,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
-  HasSourceProject: 1
-  HasPlatforms: 1
+  HasSourceProject: 0
+  HasPlatforms: 0
   sourceProjectPath: FMOD_Dungeon_Escape_Audio/FMOD_Dungeon_Escape_Audio.fspro
-  sourceBankPath: FMOD_Dungeon_Escape_Audio/Build
+  sourceBankPath: FMOD_Dungeon_Escape_Audio/Desktop
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -590,18 +589,12 @@ MonoBehaviour:
   - Master
   Banks:
   - Background
-  - SoundFX Menu
-  - SoundFX Moss Giant
-  - SoundFX Player
-  - SoundFX Skeleton
-  - SoundFX Spider
-  BanksToLoad:
-  - Background
-  - SoundFX Menu
-  - SoundFX Moss Giant
-  - SoundFX Player
-  - SoundFX Skeleton
-  - SoundFX Spider
+  - SoundFX/SoundFX Menu
+  - SoundFX/SoundFX Moss Giant
+  - SoundFX/SoundFX Player
+  - SoundFX/SoundFX Skeleton
+  - SoundFX/SoundFX Spider
+  BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 1
   AndroidUseOBB: 0
