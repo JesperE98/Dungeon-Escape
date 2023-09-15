@@ -564,8 +564,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../../Users/jespe/OneDrive/Dokument/FMOD Studio/FMOD_Dungeon_Escape_Audio/FMOD_Dungeon_Escape_Audio.fspro
-  sourceBankPath: ../../../../Users/jespe/OneDrive/Dokument/FMOD Studio/FMOD_Dungeon_Escape_Audio/Build
+  sourceProjectPath: FMOD_Dungeon_Escape_Audio/FMOD_Dungeon_Escape_Audio.fspro
+  sourceBankPath: FMOD_Dungeon_Escape_Audio/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -586,9 +586,22 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
-  Banks: []
-  BanksToLoad: []
+  MasterBanks:
+  - Master
+  Banks:
+  - Background
+  - SoundFX Menu
+  - SoundFX Moss Giant
+  - SoundFX Player
+  - SoundFX Skeleton
+  - SoundFX Spider
+  BanksToLoad:
+  - Background
+  - SoundFX Menu
+  - SoundFX Moss Giant
+  - SoundFX Player
+  - SoundFX Skeleton
+  - SoundFX Spider
   LiveUpdatePort: 9264
   EnableMemoryTracking: 1
   AndroidUseOBB: 0
@@ -596,7 +609,7 @@ MonoBehaviour:
   MeterChannelOrdering: 0
   StopEventsOutsideMaxDistance: 0
   BoltUnitOptionsBuildPending: 0
-  EnableErrorCallback: 0
+  EnableErrorCallback: 1
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
   CurrentVersion: 131607
