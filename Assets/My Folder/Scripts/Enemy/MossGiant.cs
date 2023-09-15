@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class MossGiant : Enemy, IDamageable
 {
@@ -16,7 +17,7 @@ public class MossGiant : Enemy, IDamageable
     public void Damage()
     {
         if (isDead == true) { return; }
-        FMODUnity.RuntimeManager.PlayOneShot(HitEvent, transform.position);
+        RuntimeManager.PlayOneShot(HitEvent, transform.position);
         health -= 25;
         anim.SetTrigger("Hit");
         isHit = true;
@@ -24,7 +25,7 @@ public class MossGiant : Enemy, IDamageable
 
         if (health <= 0)
         {
-            FMODUnity.RuntimeManager.PlayOneShot(DeathEvent, transform.position);
+            RuntimeManager.PlayOneShot(DeathEvent, transform.position);
             anim.SetTrigger("Death");
             isDead = true;
             GameObject diamond = Instantiate(gemPrefab, transform.position, Quaternion.identity) as GameObject;

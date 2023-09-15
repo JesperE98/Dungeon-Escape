@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b2ca9b8b-fc63-4900-b724-079945edfce8}">
+		<property name="assetPath">
+			<value>Skeleton Death Animation_V1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.9182916666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{10f25cdc-741e-444d-9fa3-4ba7e39182f8}</destination>
+		</relationship>
+	</object>
+</objects>

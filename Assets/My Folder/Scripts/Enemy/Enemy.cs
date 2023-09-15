@@ -20,7 +20,7 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected GameObject gemPrefab;
 
-    protected FMODUnity.StudioEventEmitter _evenetEmitterRef;
+    private StudioEventEmitter _evenetEmitterRef;
 
     protected Animator anim;
     protected SpriteRenderer sprite;
@@ -38,7 +38,7 @@ public abstract class Enemy : MonoBehaviour
         sprite = GetComponentInChildren<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         diamond = GetComponent<Diamond>();
-        _evenetEmitterRef = GetComponent<FMODUnity.StudioEventEmitter>();
+        _evenetEmitterRef = GetComponent<StudioEventEmitter>();
     }
 
     private void Start()
