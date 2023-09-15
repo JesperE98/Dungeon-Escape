@@ -14,6 +14,7 @@ public class Diamond : MonoBehaviour
 
             if (_player != null)
             {
+                FMODUnity.RuntimeManager.PlayOneShot(_player.PlayerGemPickup, transform.position);
                 _player.AddGems(gems);
                 _player.diamonds += gems;
                 Destroy(gameObject);

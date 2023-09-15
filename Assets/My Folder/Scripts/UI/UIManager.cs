@@ -32,7 +32,11 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private Text gemCountText;
     [SerializeField]
-    private Image[] healthBars;
+    private Image[] healthBars; 
+    [SerializeField]
+    private GameObject HudImage;
+    [SerializeField]
+    private GameObject gameOverImage;
 
     public void OpenShop(int gemCount)
     {
@@ -56,5 +60,11 @@ public class UIManager : MonoBehaviour
             if (i == livesRemaining) { healthBars[i].enabled = false; }
         }
 
+    }
+
+    public void UpdateHUD()
+    {
+        HudImage.SetActive(false);
+        gameOverImage.SetActive(true);
     }
 }

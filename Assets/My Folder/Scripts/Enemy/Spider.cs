@@ -27,6 +27,7 @@ public class Spider : Enemy, IDamageable
 
         if (health <= 0) 
         {
+            FMODUnity.RuntimeManager.PlayOneShot(DeathEvent, transform.position);
             anim.SetTrigger("Death");
             isDead = true;
             GameObject diamond = Instantiate(gemPrefab, transform.position, Quaternion.identity) as GameObject;

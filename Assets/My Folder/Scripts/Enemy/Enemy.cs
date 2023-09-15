@@ -1,9 +1,13 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
+    public EventReference AttackEvent;
+    public EventReference DeathEvent;
+    public EventReference HitEvent;
 
     [SerializeField]
     protected int health;
@@ -16,6 +20,8 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField]
     protected GameObject gemPrefab;
 
+    protected FMODUnity.StudioEventEmitter _evenetEmitterRef;
+
     protected Animator anim;
     protected SpriteRenderer sprite;
     protected Vector3 currentTarget;
@@ -25,24 +31,29 @@ public abstract class Enemy : MonoBehaviour
     protected Player player;
     protected bool isDead = false;
 
+    FMOD.Studio.EventInstance enemyState;
     public virtual void Init()
     {
         anim = GetComponentInChildren<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         diamond = GetComponent<Diamond>();
+        _evenetEmitterRef = GetComponent<FMODUnity.StudioEventEmitter>();
     }
 
     private void Start()
     {
         Init();
+        
     }
 
     public virtual void Update()
     {
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") && anim.GetBool("InCombat") == false) { return; }      
-        if (isDead == false) { Movement(); }
-
+        if (isDead == false) 
+        {
+            Movement();
+        }
     }
 
     public virtual void Movement()
@@ -51,16 +62,21 @@ public abstract class Enemy : MonoBehaviour
         if (currentTarget == m_pointA.position) { sprite.flipX = true; }
         else { sprite.flipX = false; }
 
+        
+
         if (transform.position == m_pointA.position)
         {
+            _evenetEmitterRef.Play();
             currentTarget = m_pointB.position;
             anim.SetTrigger("Idle");
         }
         else if (transform.position == m_pointB.position)
         {
+            _evenetEmitterRef.Play();
             currentTarget = m_pointA.position;
             anim.SetTrigger("Idle");
         }
+
         if (isHit == false) { transform.position = Vector3.MoveTowards(transform.position, currentTarget, speed * Time.deltaTime); }
 
         float distance = Vector3.Distance(transform.localPosition, player.transform.position);

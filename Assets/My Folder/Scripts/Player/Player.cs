@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,12 @@ public class Player : MonoBehaviour, IDamageable
 
     public int diamonds = 0;
 
+    public EventReference PlayerGemPickup;
+    public EventReference AttackEvent;
+    public EventReference DeathEvent;
+    public EventReference HitEvent;
+    public EventReference JumpEvent;
+
     private Rigidbody2D m_rb2D;
     private BoxCollider2D m_bc2D;
     private PlayerAnimation m_playerAnim;
@@ -21,6 +28,7 @@ public class Player : MonoBehaviour, IDamageable
     [SerializeField] private float m_jumpForce = 5.0f;
     [SerializeField] private float m_speed = 2.5f;
 
+    FMOD.Studio.EventInstance playerState;
 
     private void Awake()
     {
@@ -59,9 +67,10 @@ public class Player : MonoBehaviour, IDamageable
         }
                  
 
-        if (CrossPlatformInputManager.GetButtonDown("B_Button") || Input.GetKeyDown(KeyCode.Space) && IsGrounded() == true)
+        if (CrossPlatformInputManager.GetButtonDown("B_Button") && IsGrounded() == true || Input.GetKeyDown(KeyCode.Space) && IsGrounded() == true)
         {
             m_playerAnim.Jump(true);
+            FMODUnity.RuntimeManager.PlayOneShot(JumpEvent, transform.position);
             m_rb2D.velocity = new Vector2(m_rb2D.velocity.x, m_jumpForce);           
         }
 
@@ -120,11 +129,15 @@ public class Player : MonoBehaviour, IDamageable
     void PlayerAttack()
     {
         m_playerAnim.Attack();
+        FMODUnity.RuntimeManager.PlayOneShot(AttackEvent, transform.position);
     }
+
+
 
     public void Damage()
     {
         if (Health < 1) { return; }
+        FMODUnity.RuntimeManager.PlayOneShot(HitEvent, transform.position);
         Health--;
         m_anim.SetTrigger("Hit");
         UIManager.Instance.UpdateLives(Health);
@@ -132,7 +145,16 @@ public class Player : MonoBehaviour, IDamageable
         if (Health <= 0)
         {
             m_anim.SetTrigger("Death");
+            UIManager.Instance.UpdateHUD();
+            FMODUnity.RuntimeManager.PlayOneShot(DeathEvent, transform.position);
         }
+    }
+
+    public void CertainDeath()
+    {
+        m_anim.SetTrigger("Death");
+        UIManager.Instance.UpdateHUD();
+        FMODUnity.RuntimeManager.PlayOneShot(DeathEvent, transform.position);
     }
 
     public void AddGems(int amount)
