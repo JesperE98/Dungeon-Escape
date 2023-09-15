@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{f22622b0-c3e7-4acd-913b-d0776b98d8c8}">
+		<property name="name">
+			<value>SoundFX Moss Giant</value>
+		</property>
+		<relationship name="folder">
+			<destination>{be9cf062-545a-420f-a0a3-818fca7a8cc7}</destination>
+		</relationship>
+	</object>
+</objects>
