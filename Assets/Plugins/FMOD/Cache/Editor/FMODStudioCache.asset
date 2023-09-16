@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8996270601603401955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SoundFX Menu.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Dungeon_Escape_Audio/Desktop/Desktop/SoundFX Menu.bank
+  Name: SoundFX Menu
+  StudioPath: bank:/SoundFX Menu
+  lastModified: 638303935817077788
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-8754783202253804256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,7 +72,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1333
---- !u!114 &-8158390399402665937
+--- !u!114 &-8517435768488087041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,12 +82,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SoundFX Spider.bank
+  m_Name: bank:/SoundFX Moss Giant.bank
   m_EditorClassIdentifier: 
-  Path: FMOD_Dungeon_Escape_Audio/Desktop/SoundFX Spider.bank
-  Name: SoundFX Spider
-  StudioPath: bank:/SoundFX Spider
-  lastModified: 638303749168023197
+  Path: Assets/FMOD_Dungeon_Escape_Audio/Desktop/Desktop/SoundFX Moss Giant.bank
+  Name: SoundFX Moss Giant
+  StudioPath: bank:/SoundFX Moss Giant
+  lastModified: 638303950451757554
   FileSizes: []
   Exists: 1
 --- !u!114 &-7992429829888441876
@@ -274,7 +292,7 @@ MonoBehaviour:
     Data3: 517182382
     Data4: -580738670
   Banks:
-  - {fileID: -3621712513229265931}
+  - {fileID: -8517435768488087041}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -368,7 +386,7 @@ MonoBehaviour:
     Data3: -557720694
     Data4: -390351358
   Banks:
-  - {fileID: -3621712513229265931}
+  - {fileID: -8517435768488087041}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -395,7 +413,7 @@ MonoBehaviour:
     Data3: 1962222257
     Data4: 1296798610
   Banks:
-  - {fileID: -1783128316535136481}
+  - {fileID: -6039078252141135879}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -403,6 +421,42 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 458
+--- !u!114 &-6043181490750041143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Dungeon_Escape_Audio/Desktop/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638303935816431003
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6039078252141135879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SoundFX Skeleton.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Dungeon_Escape_Audio/Desktop/Desktop/SoundFX Skeleton.bank
+  Name: SoundFX Skeleton
+  StudioPath: bank:/SoundFX Skeleton
+  lastModified: 638303950451991769
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-5491109319321075745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,26 +538,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
---- !u!114 &-5009714318258281142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_Dungeon_Escape_Audio/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638303749168079827
-  FileSizes:
-  - Name: 
-    Value: 1766
-  Exists: 1
 --- !u!114 &-4903126273122013860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,24 +659,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-3621712513229265931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SoundFX Moss Giant.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_Dungeon_Escape_Audio/Desktop/SoundFX Moss Giant.bank
-  Name: SoundFX Moss Giant
-  StudioPath: bank:/SoundFX Moss Giant
-  lastModified: 638303749167420594
-  FileSizes: []
-  Exists: 1
 --- !u!114 &-2315263308383783186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,7 +718,7 @@ MonoBehaviour:
     Data3: 2106468791
     Data4: -1438757800
   Banks:
-  - {fileID: -1783128316535136481}
+  - {fileID: -6039078252141135879}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -710,24 +726,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2918
---- !u!114 &-1783128316535136481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SoundFX Skeleton.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_Dungeon_Escape_Audio/Desktop/SoundFX Skeleton.bank
-  Name: SoundFX Skeleton
-  StudioPath: bank:/SoundFX Skeleton
-  lastModified: 638303749167834234
-  FileSizes: []
-  Exists: 1
 --- !u!114 &-1561592236634673190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,7 +772,7 @@ MonoBehaviour:
     Data3: 849311164
     Data4: 1201895090
   Banks:
-  - {fileID: -642226328910007355}
+  - {fileID: 1653722598723877648}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -801,7 +799,7 @@ MonoBehaviour:
     Data3: 814345357
     Data4: 2114901370
   Banks:
-  - {fileID: -1783128316535136481}
+  - {fileID: -6039078252141135879}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -830,24 +828,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 59712
   Exists: 1
---- !u!114 &-642226328910007355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SoundFX Player.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_Dungeon_Escape_Audio/Desktop/SoundFX Player.bank
-  Name: SoundFX Player
-  StudioPath: bank:/SoundFX Player
-  lastModified: 638303749167632664
-  FileSizes: []
-  Exists: 1
 --- !u!114 &-497692208513604443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,24 +847,6 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1774
-  Exists: 1
---- !u!114 &-443762839162334861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SoundFX Menu.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_Dungeon_Escape_Audio/Desktop/SoundFX Menu.bank
-  Name: SoundFX Menu
-  StudioPath: bank:/SoundFX Menu
-  lastModified: 638303749167225380
-  FileSizes: []
   Exists: 1
 --- !u!114 &-379732268612439877
 MonoBehaviour:
@@ -959,7 +921,7 @@ MonoBehaviour:
     Data3: -247319934
     Data4: -33896343
   Banks:
-  - {fileID: -3621712513229265931}
+  - {fileID: -8517435768488087041}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -980,14 +942,14 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -5009714318258281142}
-  - {fileID: 6202695724200007667}
-  - {fileID: 1738611117235421596}
-  - {fileID: -443762839162334861}
-  - {fileID: -3621712513229265931}
-  - {fileID: -642226328910007355}
-  - {fileID: -1783128316535136481}
-  - {fileID: -8158390399402665937}
+  - {fileID: 5808315021003692070}
+  - {fileID: 2732818324426387313}
+  - {fileID: -6043181490750041143}
+  - {fileID: -8996270601603401955}
+  - {fileID: -8517435768488087041}
+  - {fileID: 1653722598723877648}
+  - {fileID: -6039078252141135879}
+  - {fileID: 6847043429402350257}
   EditorEvents:
   - {fileID: 7322970537203850892}
   - {fileID: -13795497745161287}
@@ -1008,10 +970,10 @@ MonoBehaviour:
   - {fileID: 8507066484280698831}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 1738611117235421596}
+  - {fileID: -6043181490750041143}
   StringsBanks:
-  - {fileID: -5009714318258281142}
-  cacheTime: 638303749168079827
+  - {fileID: 5808315021003692070}
+  cacheTime: 638303950452201846
   cacheVersion: 131607
 --- !u!114 &16364687665821428
 MonoBehaviour:
@@ -1032,7 +994,7 @@ MonoBehaviour:
     Data3: -12925781
     Data4: 1627604060
   Banks:
-  - {fileID: -1783128316535136481}
+  - {fileID: -6039078252141135879}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -1107,7 +1069,7 @@ MonoBehaviour:
     Data3: -646542686
     Data4: -759218490
   Banks:
-  - {fileID: -3621712513229265931}
+  - {fileID: -8517435768488087041}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -1134,7 +1096,7 @@ MonoBehaviour:
     Data3: 1134997166
     Data4: 2066172047
   Banks:
-  - {fileID: -642226328910007355}
+  - {fileID: 1653722598723877648}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1161,7 +1123,7 @@ MonoBehaviour:
     Data3: -2141978478
     Data4: 1021456443
   Banks:
-  - {fileID: -642226328910007355}
+  - {fileID: 1653722598723877648}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1188,7 +1150,7 @@ MonoBehaviour:
     Data3: 1408599181
     Data4: 1548912565
   Banks:
-  - {fileID: -642226328910007355}
+  - {fileID: 1653722598723877648}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1196,7 +1158,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
---- !u!114 &1738611117235421596
+--- !u!114 &1653722598723877648
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1206,12 +1168,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/SoundFX Player.bank
   m_EditorClassIdentifier: 
-  Path: FMOD_Dungeon_Escape_Audio/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638303749168068896
+  Path: Assets/FMOD_Dungeon_Escape_Audio/Desktop/Desktop/SoundFX Player.bank
+  Name: SoundFX Player
+  StudioPath: bank:/SoundFX Player
+  lastModified: 638303935818904427
   FileSizes: []
   Exists: 1
 --- !u!114 &2457622386343449327
@@ -1295,6 +1257,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1781
+--- !u!114 &2732818324426387313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Background.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Dungeon_Escape_Audio/Desktop/Desktop/Background.bank
+  Name: Background
+  StudioPath: bank:/Background
+  lastModified: 638303935816380149
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2755835965806008771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1525,6 +1505,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &5808315021003692070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Dungeon_Escape_Audio/Desktop/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638303935816446233
+  FileSizes:
+  - Name: 
+    Value: 1766
+  Exists: 1
 --- !u!114 &5897321138375696409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1552,24 +1552,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 904
---- !u!114 &6202695724200007667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Background.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD_Dungeon_Escape_Audio/Desktop/Background.bank
-  Name: Background
-  StudioPath: bank:/Background
-  lastModified: 638303745361117874
-  FileSizes: []
-  Exists: 1
 --- !u!114 &6713072144370498898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1591,6 +1573,24 @@ MonoBehaviour:
   - Name: Desktop
     Value: 44864
   Exists: 1
+--- !u!114 &6847043429402350257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SoundFX Spider.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD_Dungeon_Escape_Audio/Desktop/Desktop/SoundFX Spider.bank
+  Name: SoundFX Spider
+  StudioPath: bank:/SoundFX Spider
+  lastModified: 638303950452201846
+  FileSizes: []
+  Exists: 1
 --- !u!114 &6951644541509189737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1610,7 +1610,7 @@ MonoBehaviour:
     Data3: -510624609
     Data4: 260781867
   Banks:
-  - {fileID: -642226328910007355}
+  - {fileID: 1653722598723877648}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1711,7 +1711,7 @@ MonoBehaviour:
     Data3: 1457974450
     Data4: -1845132236
   Banks:
-  - {fileID: -443762839162334861}
+  - {fileID: -8996270601603401955}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1792,7 +1792,7 @@ MonoBehaviour:
     Data3: -103984970
     Data4: 1179534363
   Banks:
-  - {fileID: -8158390399402665937}
+  - {fileID: 6847043429402350257}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -1839,7 +1839,7 @@ MonoBehaviour:
     Data3: 2014682020
     Data4: -1540797535
   Banks:
-  - {fileID: -8158390399402665937}
+  - {fileID: 6847043429402350257}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1866,7 +1866,7 @@ MonoBehaviour:
     Data3: 926238393
     Data4: 1838464190
   Banks:
-  - {fileID: -642226328910007355}
+  - {fileID: 1653722598723877648}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
